@@ -3,19 +3,31 @@
 @tailwind utilities;
 
 
-.footer-position{
-  position:absolute;
-  bottom: -0;
-  left: 5%;
-}
 
-/* custom css library building using @apply */
+
+/* custom css library building using @apply for reusing purpose */
 .my-container{
   @apply p-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-8
 }
 
+.border-outline{
+  @apply rounded-md text-gradient inline-flex items-center h-12 px-6 transition duration-100 shadow-md md:mb-0 hover:bg-purple-600 font-bold
+}
+
 .btn{
   @apply inline-flex items-center h-12 px-6 font-medium text-white transition duration-200 rounded-md shadow-md md:mb-0 bg-purple-500 hover:bg-purple-600
+}
+
+.btn-bg{
+  background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+}
+
+.text-gradient{
+  background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 
 .badge{
@@ -23,9 +35,9 @@
 }
 
 .active{
-  @apply font-bold tracking-wide text-purple-500 transition-colors duration-100 hover:text-purple-700
+  @apply font-extrabold tracking-wide text-gradient transition-colors duration-100 hover:text-purple-500
 }
 
 .default{
-  @apply font-medium tracking-wide text-gray-700 transition-colors duration-100 hover:text-purple-700
+  @apply font-medium tracking-wide text-gray-700 transition-colors duration-100 hover:text-purple-500
 }

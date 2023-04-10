@@ -12,7 +12,7 @@ const Header = () => {
 
                 {/* btn part */}
                 <Link to={'/featuredJobs'} title='Click here to find & apply'>
-                    <button className='btn'>Start Applying</button>
+                    <button className='btn btn-bg'>Start Applying</button>
                 </Link>
             </div>
 
