@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Software Engineer",
+    "logo": "/src/assets/Icons/chip 1.png",
+    "numberOfJobsAvailable": 500
+  },
+  {
+    "id": 2,
+    "title": "Data Scientist",
+    "logo": "/src/assets/Icons/business 1.png",
+    "numberOfJobsAvailable": 250
+  },
+  {
+    "id": 3,
+    "title": "Marketing Manager",
+    "logo": "/src/assets/Icons/social-media 1.png",
+    "numberOfJobsAvailable": 100
+  },
+  {
+    "id": 4,
+    "title": "Sales Representative",
+    "logo": "/src/assets/Icons/accounts 1.png",
+    "numberOfJobsAvailable": 350
+  }
+]

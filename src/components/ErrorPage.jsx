@@ -8,7 +8,7 @@ const ErrorPage = () => {
       <div className='container flex flex-col items-center justify-center px-5 mx-auto my-8'>
         
         <div className='max-w-md text-center'>
-          <h2 className='mb-8 font-extrabold text-9xl text-yellow-500'>
+          <h2 className='mb-8 font-extrabold text-9xl text-purple-500'>
             <span className='sr-only'>Error</span>
             {status || 404}
           </h2>
