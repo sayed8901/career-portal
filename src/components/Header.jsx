@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <nav className='my-container justify-between md:flex items-center sticky top-0 bg-slate-50 gap-4'>
 
-            <div className='flex justify-between items-center md:gap-4 lg:gap-60 mb-2'>
+            <div className='flex justify-between items-center md:gap-4 lg:gap-52 mb-2'>
                 <Link to={'/'} title='Home page'>
                     <h1 className='text-3xl font-bold gap-4'>CareerPortal</h1>
                 </Link>

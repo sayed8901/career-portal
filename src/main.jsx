@@ -35,7 +35,7 @@ const router = createBrowserRouter([
       {
         path: '/featuredJobs/:jobId',
         element: <JobDetails></JobDetails>,
-        loader: ({params}) => fetch(`https://jsonplaceholder.typicode.com/users/${params.jobId}`)
+        loader: ({params}) => fetch('/job.json')
       },
       {
         path: '/appliedJobs',
