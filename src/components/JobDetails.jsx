@@ -1,9 +1,16 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
+
+import jobData from '../../public/jobsById.json';
+
 
 const JobDetails = () => {
+    const jobInfo = useLoaderData();
+    console.log(jobInfo);
+
     return (
-        <div>
-            Job Details page
+        <div className='my-container'>
+            Job Details for:
         </div>
     );
 };

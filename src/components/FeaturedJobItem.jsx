@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import JobDetails from "./JobDetails";
 
 const FeaturedJobItem = ({ jobItem }) => {
 //   console.log(jobItem);
@@ -20,6 +21,7 @@ const FeaturedJobItem = ({ jobItem }) => {
     educationalRequirements,
     experienceNeeded,
   } = jobItem;
+
 
   return (
     <div className="m-2 p-8 border rounded-md text-left">
@@ -44,7 +46,7 @@ const FeaturedJobItem = ({ jobItem }) => {
       </div>
 
       {/* to go to featured jobs section */}
-      <Link to={"/jobDetails"}>
+      <Link to={`/featuredJobs/${id}`} >
         <button className="btn btn-bg" title="Click here to see details info"> 
             View Details
         </button>
