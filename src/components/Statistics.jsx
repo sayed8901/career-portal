@@ -23,7 +23,7 @@ const data = [
 const Statistics = () => {
   return (
     <div className="my-container">
-      <h1 className="text-4xl font-bold text-center mt-4 mb-8">Applied Jobs</h1>
+      <h1 className="text-4xl font-bold text-center mt-4 mb-8">Assignment Marks</h1>
 
       <AreaChart
         width={700}
