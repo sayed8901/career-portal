@@ -10,14 +10,14 @@ import {
 } from "recharts";
 
 const data = [
-  { name: "Assignment-1", marksObtained: 60, totalMarks: 60 },
-  { name: "Assignment-2", marksObtained: 60, totalMarks: 60 },
-  { name: "Assignment-3", marksObtained: 57, totalMarks: 60 },
-  { name: "Assignment-4", marksObtained: 60, totalMarks: 60 },
-  { name: "Assignment-5", marksObtained: 60, totalMarks: 60 },
-  { name: "Assignment-6", marksObtained: 60, totalMarks: 60 },
-  { name: "Assignment-7", marksObtained: 60, totalMarks: 60 },
-  { name: "Assignment-8", marksObtained: 60, totalMarks: 60 },
+  { name: "Assignment 1", marksObtained: 60, totalMarks: 60 },
+  { name: "Assignment 2", marksObtained: 60, totalMarks: 60 },
+  { name: "Assignment 3", marksObtained: 57, totalMarks: 60 },
+  { name: "Assignment 4", marksObtained: 60, totalMarks: 60 },
+  { name: "Assignment 5", marksObtained: 60, totalMarks: 60 },
+  { name: "Assignment 6", marksObtained: 60, totalMarks: 60 },
+  { name: "Assignment 7", marksObtained: 60, totalMarks: 60 },
+  { name: "Assignment 8", marksObtained: 60, totalMarks: 60 },
   { name: "Averarge", marksObtained: 59.63, totalMarks: 60 },
 ];
 
@@ -37,7 +37,7 @@ const Statistics = () => {
           bottom: 0,
         }}
       >
-        <CartesianGrid strokeDasharray="4 8" />
+        <CartesianGrid strokeDasharray="6 9" />
         <XAxis dataKey="name" />
         <YAxis />
         <Tooltip />
