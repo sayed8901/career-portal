@@ -8,16 +8,15 @@ const Home = () => {
 
   return (
     <div>
-      <div className="my-container sm:grid grid-cols-2 items-center">
+      <div className="my-container sm:grid grid-cols-2 items-center gap-4">
         <div className="text-center sm:text-left mb-8 sm:mb-0">
-          <h1 className="text-3xl lg:text-7xl font-bold tracking-wide leading-snug">
+          <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold tracking-wide leading-snug">
             Find here your
             <br />
             <span className="text-gradient">Dream</span> job
           </h1>
-          <p className="my-2 sm:my-4 lg:my-12">
-            The first and leading career management site in the country with
-            in-depth understanding of the needs of job seekers and employers.
+          <p className="my-2 text-sm md:text-base sm:my-4 lg:my-12">
+            The first and leading career management site in the country with in-depth understanding of the needs of job seekers and employers.
           </p>
           <Link to={"/blog"}>
             <button className="btn btn-bg" title="Click for more info">
