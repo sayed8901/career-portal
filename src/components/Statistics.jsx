@@ -10,14 +10,15 @@ import {
 } from "recharts";
 
 const data = [
-  { name: "A-01", marksObtained: 60, totalMarks: 60 },
-  { name: "A-02", marksObtained: 60, totalMarks: 60 },
-  { name: "A-03", marksObtained: 57, totalMarks: 60 },
-  { name: "A-04", marksObtained: 60, totalMarks: 60 },
-  { name: "A-05", marksObtained: 60, totalMarks: 60 },
-  { name: "A-06", marksObtained: 60, totalMarks: 60 },
-  { name: "A-07", marksObtained: 60, totalMarks: 60 },
-  { name: "A-08", marksObtained: 60, totalMarks: 60 },
+  { name: "Assignment-1", marksObtained: 60, totalMarks: 60 },
+  { name: "Assignment-2", marksObtained: 60, totalMarks: 60 },
+  { name: "Assignment-3", marksObtained: 57, totalMarks: 60 },
+  { name: "Assignment-4", marksObtained: 60, totalMarks: 60 },
+  { name: "Assignment-5", marksObtained: 60, totalMarks: 60 },
+  { name: "Assignment-6", marksObtained: 60, totalMarks: 60 },
+  { name: "Assignment-7", marksObtained: 60, totalMarks: 60 },
+  { name: "Assignment-8", marksObtained: 60, totalMarks: 60 },
+  { name: "Averarge", marksObtained: 59.63, totalMarks: 60 },
 ];
 
 const Statistics = () => {
@@ -26,7 +27,7 @@ const Statistics = () => {
       <h1 className="text-4xl font-bold text-center mt-4 mb-8">Assignment Marks</h1>
 
       <AreaChart
-        width={700}
+        width={1000}
         height={400}
         data={data}
         margin={{
