@@ -8,7 +8,7 @@ const FeaturedJobs = () => {
 
     return (
         <div className='my-container text-center space-y-4 sm:space-y-8 my-4'>
-            <h1 className='text-5xl font-bold'>Featured Jobs</h1>
+            <h1 className='text-4xl font-bold'>Featured Jobs</h1>
             <p>Our vision is to try bringing Internet technology in the mainstream business and economic life of the society.</p>
             <div className='md:grid grid-cols-2'>
                 {

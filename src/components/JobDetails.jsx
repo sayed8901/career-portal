@@ -93,7 +93,7 @@ const JobDetails = () => {
 
           {/* back btn */}
           <button onClick={backBtn} className="btn btn-bg">
-            Back to all jobs
+            Back
           </button>
         </div>
 
