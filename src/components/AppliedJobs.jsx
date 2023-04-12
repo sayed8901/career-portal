@@ -2,22 +2,22 @@ import React, { useState } from 'react';
 import AppliedJobsItem from './AppliedJobsItem';
 
 const AppliedJobs = () => {
-    let storedCart = JSON.parse(localStorage.getItem('appliedJobs'));
+    const storedCart = JSON.parse(localStorage.getItem('appliedJobs'));
     // console.log(storedCart);
 
+    const [jobs, setJobs] = useState(storedCart);
+    // console.log(jobs);
 
     const [jobCategory, setJobCategory] = useState([storedCart]);
 
     const handleRemoteJobsBtn = () => {
-        storedCart = storedCart.filter(job => job.jobStatus == 'Remote');
-        // console.log(storedCart);
-        setJobCategory(storedCart);
+        const remoteJobs = storedCart.filter(job => job.jobStatus == 'Remote');
+        setJobs(remoteJobs);
     }
     
     const handleOnsiteJobsBtn = () => {
-        storedCart = storedCart.filter(job => job.jobStatus == 'Onsite');
-        // console.log(storedCart);
-        setJobCategory(storedCart);
+        const onsiteJobs = storedCart.filter(job => job.jobStatus == 'Onsite');
+        setJobs(onsiteJobs);
     }
 
     
@@ -26,16 +26,16 @@ const AppliedJobs = () => {
             <h1 className='text-4xl font-bold text-center mt-4 mb-8'>Applied Jobs</h1>
             <div className='text-right space-x-4 my-4'>
                 <button className='font-bold'>Filter by:</button>
-                <button onClick={handleRemoteJobsBtn}
-                    className='btn btn-bg'
-                    >Remote</button>
-                <button onClick={handleOnsiteJobsBtn}
-                    className='btn btn-bg'
-                    >Onsite</button>
+                <button className='btn btn-bg'
+                    onClick={handleRemoteJobsBtn}
+                        >Remote</button>
+                <button className='btn btn-bg'
+                    onClick={handleOnsiteJobsBtn}
+                        >Onsite</button>
             </div>
             <div>
                 {
-                    storedCart.map(appliedItem => 
+                    jobs.map(appliedItem => 
                     <AppliedJobsItem
                         key = {appliedItem.id}
                         appliedItem = {appliedItem}
