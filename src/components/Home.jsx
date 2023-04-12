@@ -24,7 +24,7 @@ const Home = () => {
             </button>
           </Link>
         </div>
-        <img src="/src/assets/cover-pic.jpg" className="rounded-md" alt="" />
+        <img src="/assets/cover-pic.jpg" className="rounded-md" alt="" />
       </div>
 
       {/* jobs category section */}

@@ -60,7 +60,7 @@ const JobDetails = () => {
       alert('You have successfully applied!');
     }
     else{
-      alert('already applied!');
+      alert('Oops! You have already applied!!');
     }
   }
 
@@ -101,25 +101,25 @@ const JobDetails = () => {
           <div className="bg-slate-100 p-4 rounded-lg">
             <h3 className="text-xl font-bold border-b-4 border-slate-200 pb-4">Job Details</h3>
             <div className="flex gap-4 my-4">
-                <img src="/src/assets/Icons/Frame.png" className="h-6" alt="" />
+                <img src="/assets/Icons/Frame.png" className="h-6" alt="" />
                 <p><span className="font-bold mr-4">Salary:</span>{salary}</p>
             </div>
             <div className="flex gap-4 my-4">
-                <img src="/src/assets/Icons/Frame-1.png" className="h-6" alt="" />
+                <img src="/assets/Icons/Frame-1.png" className="h-6" alt="" />
                 <p><span className="font-bold mr-4">Job Title:</span>{jobTitle}</p>
             </div>
             
             <h3 className="text-xl font-bold border-b-4 border-slate-200 pb-4 mt-8">Contact Information</h3>
             <div className="flex gap-4 my-4">
-                <img src="/src/assets/Icons/Frame-2.png" className="h-6" alt="" />
+                <img src="/assets/Icons/Frame-2.png" className="h-6" alt="" />
                 <p><span className="font-bold mr-4">Phone:</span>{companyContactNo}</p>
             </div>
             <div className="flex gap-4 my-4">
-                <img src="/src/assets/Icons/Frame-3.png" className="h-6" alt="" />
+                <img src="/assets/Icons/Frame-3.png" className="h-6" alt="" />
                 <p><span className="font-bold mr-4">Email:</span>{companyEmail}</p>
             </div>
             <div className="flex gap-4 mt-4">
-                <img src="/src/assets/Icons/Frame-4.png" className="h-6" alt="" />
+                <img src="/assets/Icons/Frame-4.png" className="h-6" alt="" />
                 <p><span className="font-bold mr-4">Address:</span>{companyAddress}</p>
             </div>
           </div>

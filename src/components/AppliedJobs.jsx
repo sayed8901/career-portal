@@ -1,9 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import AppliedJobsItem from './AppliedJobsItem';
 
 const AppliedJobs = () => {
-    const storedCart = JSON.parse(localStorage.getItem('appliedJobs'));
-    console.log(storedCart);
+    let storedCart = JSON.parse(localStorage.getItem('appliedJobs'));
+    // console.log(storedCart);
+
+
+    const [jobCategory, setJobCategory] = useState([storedCart]);
+
+    const handleRemoteJobsBtn = () => {
+        storedCart = storedCart.filter(job => job.jobStatus == 'Remote');
+        // console.log(storedCart);
+        setJobCategory(storedCart);
+    }
+    
+    const handleOnsiteJobsBtn = () => {
+        storedCart = storedCart.filter(job => job.jobStatus == 'Onsite');
+        // console.log(storedCart);
+        setJobCategory(storedCart);
+    }
 
     
     return (
@@ -11,8 +26,12 @@ const AppliedJobs = () => {
             <h1 className='text-4xl font-bold text-center mt-4 mb-8'>Applied Jobs</h1>
             <div className='text-right space-x-4 my-4'>
                 <button className='font-bold'>Filter by:</button>
-                <button className='btn btn-bg'>Remote</button>
-                <button className='btn btn-bg'>Onsite</button>
+                <button onClick={handleRemoteJobsBtn}
+                    className='btn btn-bg'
+                    >Remote</button>
+                <button onClick={handleOnsiteJobsBtn}
+                    className='btn btn-bg'
+                    >Onsite</button>
             </div>
             <div>
                 {
@@ -20,6 +39,8 @@ const AppliedJobs = () => {
                     <AppliedJobsItem
                         key = {appliedItem.id}
                         appliedItem = {appliedItem}
+                        handleRemoteJobsBtn = {handleRemoteJobsBtn}
+                        handleOnsiteJobsBtn = {handleOnsiteJobsBtn}
                     ></AppliedJobsItem>)
                 }
             </div>

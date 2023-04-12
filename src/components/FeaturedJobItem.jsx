@@ -34,12 +34,12 @@ const FeaturedJobItem = ({ jobItem }) => {
       <div className="flex gap-8 my-4">
         <div className="flex gap-2">
           <img
-            src="/src/assets/Icons/Frame-4.png" alt=""
+            src="/assets/Icons/Frame-4.png" alt=""
           />
           <p>{jobLocation}</p>
         </div>
         <div className="flex gap-2">
-          <img src="/src/assets/Icons/Frame.png" alt="" />
+          <img src="/assets/Icons/Frame.png" alt="" />
           <p>{salary}</p>
         </div>
       </div>
