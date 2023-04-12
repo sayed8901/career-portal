@@ -1,7 +1,11 @@
 Welcome you to my site.
+
 This is a demo portal site where you can find tour dream job at a convenient way.
 
+
+
 Features:
+
 * You can find the jobs categorized in "job category List" section.
 
 * In the "Featured Jobs" page You can find all the available jobs.
@@ -19,5 +23,8 @@ Features:
 * This web-site is fully responsive throughout the mobile, tablet, laptop or desktop. Hope you love it.
 
 
+
+
 Netlify Live Link:
+
 https://zippy-nougat-d2840e.netlify.app
