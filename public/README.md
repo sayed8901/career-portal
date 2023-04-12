@@ -8,7 +8,9 @@ Features:
 * You can easily view details of any job circular by just tapping on the "View Details" button next to it.
 * If you want to apply just click on the "Apply Now" button.
 
-* In the "Applied_Jobs" page you can see a list of all the jobs you have already applied. If you curious to see the details info of your applied jobs, just click on the "View Details" button.
+* In the "Applied_Jobs" page you can see a list of all the jobs you have already applied. 
+* You can also filter your "Applied_Jobs" as per 'remote' or 'onsite' category.
+* If you curious to see the details info of your applied jobs, just click on the "View Details" button.
 
 * In the "Statistics" page, Here you can see a chart of assignment marks.
 
@@ -18,3 +20,4 @@ Features:
 
 
 Netlify Live Link:
+https://zippy-nougat-d2840e.netlify.app

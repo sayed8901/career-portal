@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLoaderData, useNavigate, useParams } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const JobDetails = () => {
   const { jobId } = useParams();
@@ -57,10 +58,10 @@ const JobDetails = () => {
     if(!exists){
       storedCart.push(data);
       localStorage.setItem('appliedJobs', JSON.stringify(storedCart));
-      alert('You have successfully applied!');
+      toast('You have successfully applied!');
     }
     else{
-      alert('Oops! You have already applied!!');
+      toast('Oops! You have already applied!!');
     }
   }
 

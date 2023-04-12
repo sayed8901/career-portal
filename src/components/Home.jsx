@@ -45,10 +45,10 @@ const Home = () => {
       </div>
 
       {/* to go to featured jobs section */}
-      <div className="my-container text-right">
+      <div className="my-container text-center sm:text-right">
         <Link to={"/featuredJobs"}>
-          <button className="btn btn-bg" title="Click here to see all the available jobs right now">
-            Tap on it to see all the available jobs
+          <button className="btn btn-bg mb-4 sm:mb-8" title="Click here to see all the available jobs right now">
+            Tap to see all the available jobs
           </button>
         </Link>
       </div>
